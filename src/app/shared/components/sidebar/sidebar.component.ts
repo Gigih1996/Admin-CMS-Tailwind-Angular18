@@ -23,23 +23,23 @@ export class SidebarComponent implements OnInit {
 
    ngOnInit(): void {
     // Dapatkan elemen aside setelah tampilan selesai
-    this.aside = this.el.nativeElement.ownerDocument.querySelector('#aside');
+    // this.aside = this.el.nativeElement.ownerDocument.querySelector('#aside');
 
-    if (!this.aside) {
-      console.error('Element with id #aside not found');
-      return;
-    }
+    // if (!this.aside) {
+    //   console.error('Element with id #aside not found');
+    //   return;
+    // }
 
-    // Tambahkan event listener untuk klik di window
-    this.renderer.listen('window', 'click', (event: Event) => {
-      const target = event.target as HTMLElement;
+    // // Tambahkan event listener untuk klik di window
+    // this.renderer.listen('window', 'click', (event: Event) => {
+    //   const target = event.target as HTMLElement;
 
-      // Pastikan klik tidak terjadi di dalam sidebar atau elemen terkait
-      if (!this.aside.contains(target)) {
-        this.toggleClose();
-        console.log('Clicked outside the sidebar');
-      }
-    });
+    //   // Pastikan klik tidak terjadi di dalam sidebar atau elemen terkait
+    //   if (!this.aside.contains(target)) {
+    //     this.toggleClose();
+    //     console.log('Clicked outside the sidebar');
+    //   }
+    // });
   }
 
   toggleClose():void {
