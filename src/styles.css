@@ -1,1 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* @media (max-width: 945px) { */
+    /* .xl\:hidden {
+        display: none !important;
+    } */
+
+    /* .-translate-x-80 {
+        --tw-translate-x: -1rem;
+        transform: translateX(-1rem) !important;
+    } */
+
+    /* .-translate-x-80 {
+        transform: translateX(-20rem) !important;
+    } */
+/* } */
+
+@media screen and (max-width: 945px) {
+    .sidebarOpen {
+        transform: translateX(-1rem) !important;
+    }  
+}
+
+
